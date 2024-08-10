@@ -1,0 +1,8 @@
+.red-radio .chakra-radio__control {
+  border-color: red;
+}
+
+.red-radio .chakra-radio__control[data-checked] {
+  background-color: red;
+  border-color: red;
+}

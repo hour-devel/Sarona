@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* hidden x button on modal */
+button[aria-label="Close"] {
+  display: none !important;
+} 
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+:root {
+  @apply bg-gray-50;
+}
+
+input {
+  @apply px-2;
+}
+.fc-header-toolbar {
+  display: inline-block;
+  padding: 4px 4px;
+
+  @apply space-x-8;
+}
+
+.fc {
+  @apply h-[140%];
+}
+
+.fc-day {
+  @apply m-8;
+}
+
+/* mofity */
+
+/* event */
+/* .fc-event-title-container{
+  @apply bg-black
+} */
+
+.fc-more-popover {
+  @apply z-20
+}
+.fc-col-header{
+  @apply mb-[10px]
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  @apply mb-[10px];
+}
+.fc .fc-toolbar-title {
+  @apply text-[20px] font-bold;
+}
+
+.fc-scrollgrid-sync-table {
+  @apply w-full;
+}
+.fc-scroller-liquid-absolute {
+  @apply overflow-auto;
+}
+.fc .fc-scrollgrid {
+  @apply border-0;
+}
+.fc-theme-standard {
+  @apply bg-white;
+}
+.fc-view-harness {
+  @apply h-[100%];
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  @apply border-0 text-[14px];
+}
+.fc-event-title {
+  @apply text-inUseGray font-bold
+}
+
+/* mofity */
+
+/* modify day height */
+.fc .fc-daygrid-day-frame{
+  min-height: 20px !important;
+  @apply min-h-[20px];
+}
+
+.fc-view {
+  @apply w-full h-full xl:h-3/4 2xl:h-2/3 bg-white;
+}
+.fc-daygrid-body{
+  @apply w-[100%]
+}
+.fc-scrollgrid-sync-table{
+  @apply w-[100%]
+}
+.fc-event-main{
+  @apply min-h-[11px] pl-[10px]
+}
+.fc-h-event {
+  @apply bg-primary border border-primary;
+}
+.fc .fc-daygrid-day.fc-day-today {
+  @apply bg-white;
+}
+.fc-highlight{
+  @apply z-0
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
+  @apply w-[30px] h-[30px] flex justify-center text-white bg-[#FF0000] rounded-[50%] font-bold
+}
+.fc .fc-daygrid-day .fc-daygrid-day-number {
+  @apply text-inUseGray font-bold
+}
+.fc .fc-daygrid-day.fc-day-other .fc-daygrid-day-number {
+  @apply text-gray-700 font-bold
+}
+
+/* more event */
+.fc-daygrid-day-bottom{
+  @apply bg-white w-[20px] rounded-full;
+  margin-top: 10px !important;
+}
+.fc-daygrid-more-link {
+  font-size: 0; /* Hides the text */
+}
+.fc-daygrid-more-link::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3721/3721924.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fc .fc-button {
+  @apply border-none bg-white outline-none; 
+  border : none !important;
+}
+.fc-button:hover {
+  background-color: white !important ;
+  color: black !important;
+  border: none !important;
+  outline: none !important;
+}
+.fc-popover{
+  @apply rounded-[10px] overflow-hidden shadow-sd
+}
+.fc-theme-standard .fc-popover-header {
+  @apply bg-white border-b-1 h-[35px] px-[12px]
+}
+.fc-popover-title{
+  @apply text-[14px] font-light flex justify-center items-center 
+}
+.fc-popover-body {
+  padding: 10px 0 !important;
+}
+.fc-popover .fc-event-past{
+  background-color: transparent !important;
+  border: none !important;
+  height: 30px !important;
+  display: flex !important;
+  align-items: center !important
+} 
+.fc-popover .fc-event-title{
+  @apply text-[12px] ml-[5px]
+}
+.fc-popover .fc-event-past:hover{
+  background-color: #D2F0FF !important;
+}
+.fc-prev-button, .fc-next-button {
+  box-shadow: none !important;
+}
+
+.fc .fc-button span {
+  @apply text-primary;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  @apply bg-white;
+}
+
+.fc .fc-button-primary:disabled {
+  @apply bg-white;
+}
+.fc-v-event {
+  @apply bg-primary border border-primary;
+}
+
+
+::-webkit-scrollbar{
+  width: 2px;
+}
