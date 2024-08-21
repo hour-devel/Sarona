@@ -306,9 +306,10 @@ const CreateFormExaminationComponent = ({ data, title, model, params }) => {
         ),
         classId: classId,
       };
-
+      console.log("new task for create exam : ", newTask);
       const createExam = await postClassWorkActon(subjectId, newTask);
-      //console.log("create exam :", createExam);
+      console.log("subjectId :",subjectId);
+      console.log("create exam :", createExam);
       if (createExam?.statusCode == 201) {
         toast.success("Exam has been created successfully");
         model();

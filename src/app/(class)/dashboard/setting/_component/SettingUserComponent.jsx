@@ -112,7 +112,8 @@ const SettingUserComponent = ({ userSettingData }) => {
       if (updateUserResponse?.statusCode === 200) {
         toast.success(updateUserResponse?.message);
       } else {
-        throw new Error("Failed to update user's Info");
+        // throw new Error("Failed to update user's Info");
+        toast.success("Failed to update user's Info");
       }
     // } catch (error) {
     //   console.error("Error updating user settings:", error.message);

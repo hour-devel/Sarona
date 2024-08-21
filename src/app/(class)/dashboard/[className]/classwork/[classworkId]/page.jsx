@@ -93,12 +93,12 @@ const page = ({ params }) => {
     });
   };
 
-  console.log("IsExam :",isExam);
+  console.log("IsExam :", isExam);
 
   // exam tracking
   useEffect(() => {
     if (isExam) {
-      console.log('working');
+      console.log("working");
       const handleVisibilityChange = () => {
         document.title =
           document.visibilityState === "visible" ? "Visible" : "Hidden";

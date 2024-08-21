@@ -224,6 +224,7 @@ const CreateFormAssigmentComponent = ({ title, model, params }) => {
         ` Oops! Looks like You haven't completed all the required fields`
       );
     } else {
+      alert(1)
       const newTask = {
         classworkTitle: data.taskTitle,
         totalScore: data.totalsocres,
@@ -236,15 +237,17 @@ const CreateFormAssigmentComponent = ({ title, model, params }) => {
         dueDate: new Date(dueDate),
         classId: classId,
       };
-      //console.log("new task for create exam : ", newTask);
+      console.log("new task for create exam : ", newTask);
+      console.log("subjectId :",subjectId);
+
       const createExam = await postClassWorkActon(subjectId, newTask);
-      //console.log("Post Exam:", createExam);
+      
+      console.log("Post Exam:", createExam);
+
       if (createExam?.statusCode == 201) {
         toast.success("Exam has been created successfully");
         model();
-      } else {
-        toast.error("Failed to create the exam.");
-      }
+      } 
     }
   }
 

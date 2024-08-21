@@ -27,6 +27,12 @@ const RegisterComponent = () => {
     setLoading(true);
     const useGoogle = false;
     const register = await registerAction(registerInfo, useGoogle);
+    alert(1);
+    console.log("register :",registerInfo);
+
+    console.log("Log register :",register);
+    
+    
     //console.log("after register : ", register);
     if (register?.statusCode == 200) {
       setLoading(false);
