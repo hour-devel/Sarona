@@ -315,7 +315,7 @@ const TaskCardComponent = ({ userLoginId, data, subjectId, params }) => {
         <div
           className={`w-[9px] h-[100%] absolute left-0 top-0`}
           style={{
-            backgroundColor: data?.isExamination ? "#FBA834" : "#387ADF",
+            backgroundColor: data?.isExamination ? "#08b69b" : "#00BFFF",
           }}
         ></div>
         <Button
@@ -336,7 +336,7 @@ const TaskCardComponent = ({ userLoginId, data, subjectId, params }) => {
             <div
               className={`w-[60px] h-[60px] ml-[10px] mr-[10px] rounded-2xl overflow-hidden flex justify-center items-center`}
               style={{
-                backgroundColor: data?.isExamination ? "#FEE6C9" : "#CCDEF7",
+                backgroundColor: data?.isExamination ? "#daf4f0" : "#c9edff",
               }}
             >
               <Image
@@ -357,8 +357,8 @@ const TaskCardComponent = ({ userLoginId, data, subjectId, params }) => {
               <span
                 className={`px-[8px] py-[3px] ml-[10px] text-[10px] rounded-xl`}
                 style={{
-                  backgroundColor: data?.isExamination ? "#FEE6C9" : "#CCDEF7",
-                  color: data?.isExamination ? "#FBA834" : "#387ADF",
+                  backgroundColor: data?.isExamination ? "#daf4f0" : "#CCDEF7",
+                  color: data?.isExamination ? "#08b69b" : "#387ADF",
                 }}
               >
                 {subName}

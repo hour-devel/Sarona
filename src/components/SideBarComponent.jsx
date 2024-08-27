@@ -24,16 +24,9 @@ const SideBarComponent = ({ nav, classData }) => {
     >
       {/* logo */}
       <div className="w-[100%] h-[80px] bg-white float-left relative">
-        {/* <div
-          className="z-50 w-[30px] h-[30px] rounded-md bg-white absolute top-[50%] translate-y-[-50%] left-[94%] flex justify-center items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
-          // onClick={() => nav()}
-          id="angleLeft"
-        >
-          <i className="fa-solid fa-angle-left text-black"></i>
-        </div> */}
         <Link href="/dashboard" className="w-[100%] h-[100%]">
-          <p className="text-[#000] w-[100%] h-[100%] absolute top-[50%] translate-y-[-50%] font-bold flex justify-center items-center pr-[40px]">
-            <Image
+          <p className="text-[#08b69b] text-[30px] italic w-[100%] h-[100%] absolute top-[50%] translate-y-[-50%] font-bold flex justify-center items-center pr-[40px]">
+            {/* <Image
               src={LogoFull}
               className="2xl:w-[60%] 2xl:h-[40%] xl:w-[58%] xl:h-[30%]"
               id="logoFull"
@@ -42,7 +35,8 @@ const SideBarComponent = ({ nav, classData }) => {
               src={Logo}
               className="w-[45%] h-[45%] ml-[40px] hidden"
               id="logo"
-            />
+            /> */}
+            Cognito
           </p>
         </Link>
         <div className="w-[90%] h-[2px] bg-[#eeee] absolute bottom-0 left-[50%] translate-x-[-50%]"></div>

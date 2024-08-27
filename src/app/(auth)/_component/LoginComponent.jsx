@@ -54,7 +54,7 @@ const LoginComponent = () => {
       <div>
         <Toaster position="top-center" reverseOrder={true} />
       </div>
-      <div className="2xl:w-[500px] xl:w-[500px] lg:w-[500px] w-[91%] bg-white rounded-[40px] absolute 2xl:left-[48%] xl:left-[48%] lg:left-[48%] left-[5%] 2xl:top-[50%] xl:top-[50%] lg:top-[50%] top-[50%] translate-y-[-55%] 2xl:py-[30px] 2xl:px-[40px] xl:py-[30px] xl:px-[40px] py-[40px] px-[20px] shadow-sd ">
+      <div className="2xl:w-[500px] xl:w-[500px] lg:w-[500px] w-[91%] bg-white rounded-[40px] absolute 2xl:left-[48%] xl:left-[35%] lg:left-[20%] left-[5%] 2xl:top-[50%] xl:top-[50%] lg:top-[50%] top-[50%] translate-y-[-55%] 2xl:py-[30px] 2xl:px-[40px] xl:py-[30px] xl:px-[40px] py-[40px] px-[20px] shadow-sd ">
       <div className="2xl:px-4 xl:px-4 flex">
         <Image src={logo} alt="" className="2xl:w-[0px] 2xl:h-[0px] xl:w-[0px] xl:h-[0px] w-[45%] "></Image>
       </div>
@@ -63,7 +63,7 @@ const LoginComponent = () => {
             Login
           </h1>
           <p className="2xl:text-[14px] xl:text-[13px] text-[#757575] py-1 text-[13px]">
-            Welcome back to ClassSphere
+            Welcome back to Cognito
           </p>
         </div>
         <form onSubmit={handleSubmit(handleLogin)}>

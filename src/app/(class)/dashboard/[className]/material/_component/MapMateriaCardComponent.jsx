@@ -75,18 +75,18 @@ const MapMateriaCardComponent = ({
 
   return (
     <div
-      className={`w-[100%] h-[77px] ${material.background} dark:shadow-dark-2lg hover:shadow-sd rounded-[20px] mt-[15px] mb-[5px] cursor-pointer overflow-hidden flex justify-between items-center pr-[10px]`}
-      style={{ backgroundColor: index % 2 === 0 ? "#eff5ff" : "#feebd3b4" }}
+      className={`w-[100%] h-[77px] ${material.background}  dark:shadow-dark-2lg hover:shadow-sd rounded-[20px] mt-[15px] mb-[5px] cursor-pointer overflow-hidden flex justify-between items-center pr-[10px]`}
+      style={{ backgroundColor: index % 2 === 0 ? "#daf4f0" : "#c9edff" }}
     >
       <div className="w-[75%] h-[100%] flex items-center">
         <div
           className={`w-[1.2%] h-[100%] bg-[#387ADF]`}
-          style={{ backgroundColor: index % 2 === 0 ? "#387ADF" : "#FBA834" }}
+          style={{ backgroundColor: index % 2 === 0 ? "#08b69b" : "#00BFFF" }}
         ></div>
         <div className="w-[70%] h-[100%] ml-[2%] flex items-center">
           <div
             className={`w-[42px] h-[42px] bg-[#387ADF] rounded-[12px] flex items-center justify-center`}
-            style={{ backgroundColor: index % 2 === 0 ? "#387ADF" : "#FBA834" }}
+            style={{ backgroundColor: index % 2 === 0 ? "#08b69b" : "#00BFFF" }}
           >
             <Image
               src={IconMaterial}

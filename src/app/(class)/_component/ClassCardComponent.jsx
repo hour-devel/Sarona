@@ -189,7 +189,7 @@ const ClassCardComponent = ({ data, ind }) => {
           className={`overflow-visible py-2 relative w-[212px] h-[100%] m-auto rounded-xl mt-[7px] `}
           style={{
             backgroundColor:
-              ind % 3 === 0 ? "#387ADF" : ind % 3 === 1 ? "#FBA834" : "#50CC64",
+              ind % 3 === 0 ? "#08b69b" : ind % 3 === 1 ? "#00BFFF" : "#ff8fab",
           }}
         >
           <div className="absolute right-0 h-[110.53px] w-[118.9px] mt-[10px] flex justify-center items-center ">
@@ -261,7 +261,7 @@ const ClassCardComponent = ({ data, ind }) => {
             id="iconMember"
           ></i>
           <p className="float-left 2xl:text-[12px] pt-[20px]">
-            <span className="text-[#f28a2a]">{member?.payload?.length}</span>{" "}
+            <span className="text-[#ff8fab]">{member?.payload?.length}</span>{" "}
             Member
           </p>
         </footer>
