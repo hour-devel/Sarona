@@ -165,7 +165,7 @@ const RegisterComponent = () => {
         <Button
           type="submit"
           variant="shadow"
-          className="w-[100%] mt-[25px] bg-[#387adf] text-white 2xl:text-[14px] xl:text-[14px] text-[12px] "
+          className="w-[100%] mt-[25px] bg-[#08b69b] text-white 2xl:text-[14px] xl:text-[14px] text-[12px] "
         >
           Register
         </Button>
@@ -173,7 +173,7 @@ const RegisterComponent = () => {
 
       <p className=" mt-[15px] text-center 2xl:text-[14px] xl:text-[14px] text-[12px]  pb-[3%]">
         Already have an account ? &nbsp;
-        <Link href="/login" className="text-blue-400">
+        <Link href="/login" className="text-[#08b69b]">
           Login
         </Link>
       </p>

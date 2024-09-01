@@ -139,6 +139,7 @@ const CheckBoxComponent = ({
   useEffect(() => {
     const missingFields = getMissingFields();
     if (missingFields.length === 0) {
+      console.log("Value From CB",checkBoxValue);
       handleDynamicAnswer(checkBoxValue);
     } else {
       //console.log("Fields not input:", missingFields.join(", "));

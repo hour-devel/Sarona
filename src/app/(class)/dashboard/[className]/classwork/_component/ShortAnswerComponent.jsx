@@ -91,6 +91,8 @@ const ShortAnswerComponent = ({
   useEffect(() => {
     const missingFields = getMissingFields();
     if (!missingFields.length > 0) {
+      console.log("Short Answer :",shortAnswerValue);
+      
       handleDynamicAnswer(shortAnswerValue);
     } else {
       //console.log("Fields not input:", missingFields.join(", "));

@@ -145,6 +145,7 @@ const DropDownComponent = ({
   useEffect(() => {
     const missingFields = getMissingFields();
     if (missingFields.length === 0) {
+      console.log("Value From DD",dropDownValue);
       handleDynamicAnswer(dropDownValue);
     } else {
       //console.log("Fields not input:", missingFields.join(", "));

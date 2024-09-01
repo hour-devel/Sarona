@@ -196,7 +196,7 @@ const StreamingComponent = ({
                       <div className="flex w-[100%] cursor-pointer">
                         <div className="w-[25%] mr-2 rounded-xl" 
                         style={{
-                          backgroundColor: item?.isExamination ? "#FEE6C9" : "#CCDEF7",
+                          backgroundColor: item?.isExamination ? "#daf4f0" : "#c9edff",
                         }}>
                           <Image
                             className="object-cover w-[80%] h-[80%] rounded-xl mx-auto mt-[10%]"
@@ -212,14 +212,14 @@ const StreamingComponent = ({
                               {item.classworkTitle}
                             </div>
                             <div className="flex text-[12px] mt-1">
-                              <div>{formatDate(item.startDate)}</div>
+                              <div className="line-clamp-1">{formatDate(item.startDate)}</div>
                               <div className="font-bold mx-1">|</div>
                               <div
                                 className=""
                                 style={{
                                   color: item?.isExamination
-                                    ? "#FBA834"
-                                    : "#387ADF",
+                                    ? "#08b69b"
+                                    : "#00BFFF",
                                 }}
                               >
                                 {item.isExamination ? "Exam" : "Assignment"}

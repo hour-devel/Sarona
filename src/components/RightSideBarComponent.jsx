@@ -185,15 +185,15 @@ const RightSideBarComponent = ({ upComingClasswork, userData }) => {
         aria-label="Date (Show Month and Year Picker)"
       />
       <div
-        className={`absolute w-full px-5 bottom-[10px]`}
+        className={`absolute w-full px-5`}
         style={{ top: topTask }}
       >
         {/* Task today */}
         {filterTaskToday && filterTaskToday.length > 0 ? (
           <>
-            <div className="flex justify-between mt-2 mb-3">
+            <div className="flex justify-between mt-12 mb-3">
               <p className="uppercase text-[13px] text-primary">Today</p>
-              <p className="text-[12px] text-primary-400">
+              <p className="text-[12px] text-[#00BFFF]">
                 {formatDate(new Date())}
               </p>
             </div>
@@ -215,9 +215,9 @@ const RightSideBarComponent = ({ upComingClasswork, userData }) => {
                         className="w-[9px] h-full"
                         style={{
                           backgroundColor: item?.isExamination
-                            ? "#FEE6C9"
-                            : "#CCDEF7",
-                          color: item?.isExamination ? "#FBA834" : "#387ADF",
+                            ? "#08b69b"
+                            : "#00BFFF",
+                          color: item?.isExamination ? "#08b69b" : "#00BFFF",
                         }}
                       ></div>
                       <div className="w-full h-full px-3 flex items-center">
@@ -240,7 +240,7 @@ const RightSideBarComponent = ({ upComingClasswork, userData }) => {
           </>
         ) : null}
 
-        {filterTaskTmr && filterTaskTmr.length > 0 ? (
+        {/* {filterTaskTmr && filterTaskTmr.length > 0 ? (
           <>
             <div className="flex justify-between 2xl:mt-2 2xl:mb-3 xl:mt-3 xl:mb-4">
               <p className="uppercase text-[13px]">Tomorrow</p>
@@ -270,8 +270,10 @@ const RightSideBarComponent = ({ upComingClasswork, userData }) => {
                         }}
                       ></div>
                       <div className="w-full h-full px-3 flex items-center">
-                        <div className="w-full h-[35px]">
-                          <h1 className="t2xl:text-[14px] xl:text-[12px] text-black font-medium">
+                        <div className="w-full h-[35px]" style={{
+                            color: task?.isExamination ? "#FBA834" : "#387ADF",
+                          }}>
+                          <h1 className="t2xl:text-[14px] xl:text-[12px] font-medium" >
                             {task?.classworkTitle}
                           </h1>
                           <div className="w-full">
@@ -287,7 +289,7 @@ const RightSideBarComponent = ({ upComingClasswork, userData }) => {
               ))}
             </div>
           </>
-        ) : null}
+        ) : null} */}
 
         {(!filterTaskToday || filterTaskToday.length === 0) &&
           (!filterTaskTmr || filterTaskTmr.length === 0) && (

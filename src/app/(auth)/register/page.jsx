@@ -22,12 +22,12 @@ const RegisterPage = () => {
             <Image src={logo} alt="" className="2xl:w-[0px] 2xl:h-[0px] xl:w-[0px] xl:h-[0px] "></Image>
           </div>
           <div className="w-[100%] py-[7px]  ">
-            <h1 className="font-bold 2xl:text-[32px]  text-[#387adf] xl:text-[26px] mt-[3%]">
+            <h1 className="font-bold 2xl:text-[32px]  text-[#08b69b] xl:text-[26px] mt-[3%]">
               REGISTRATION
             </h1>
             <p className="2xl:text-[14px] text-black pt-2 2xl:pb-2 xl:pb-3 xl:text-[13px] text-[12px]">
               Create an account and get start with
-              <span className="text-[#387adf]"> Cognito</span>
+              <span className="text-[#08b69b]"> Cognito</span>
             </p>
             {/* Form Register */}
             <section>
