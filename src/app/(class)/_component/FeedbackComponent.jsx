@@ -102,8 +102,8 @@ export default function FeedbackComponent({ mark, userLoginId }) {
                   className="w-[60px] h-[60px] ml-5 rounded-[15px] flex justify-center items-center"
                   style={{
                     backgroundColor: data?.answer?.classwork?.isExamination
-                      ? "#FEE6C9"
-                      : "#CCDEF7",
+                      ? "#daf4f0"
+                      : "#c9edff",
                   }}
                 >
                   <Image
@@ -130,16 +130,16 @@ export default function FeedbackComponent({ mark, userLoginId }) {
                       className="w-[57px] h-[19px] rounded-[10px] flex justify-center items-center mt-3"
                       style={{
                         backgroundColor: data?.answer?.classwork?.isExamination
-                          ? "#FEE6C9"
-                          : "#CCDEF7",
+                          ? "#daf4f0"
+                          : "#c9edff",
                       }}
                     >
                       <p
                         className="text-[10px]"
                         style={{
                           color: data?.answer?.classwork?.isExamination
-                            ? "#FBA834"
-                            : "#387ADF",
+                            ? "#08b69b"
+                            : "#00BFFF",
                         }}
                       >
                         Next Js

@@ -7,35 +7,23 @@ import {
   ModalFooter,
   ModalHeader,
   ScrollShadow,
-  Spinner,
 } from "@nextui-org/react";
 import React, { Suspense, useEffect, useState } from "react";
 import { Input } from "@nextui-org/react";
 import Image from "next/image";
 import IconAddInstructor from "../../../../../../../public/icon class materail svg/Add Lesson Title.svg";
-import IconDelete from "../../../../../../../public/icon class materail svg/Delete Icon.svg";
-import IconMicroPowerPoint from "../../../../../../../public/icon class materail svg/PowerPoint.svg";
-import FormLinkUploadFileComponent from "./FormLinkUploadFileComponent";
 import IconLink from "../../../../../../../public/icon class materail svg/Upload Link.svg";
 import IconDownload from "../../../../../../../public/icon class materail svg/Upload file.svg";
-import IconWord from "../../../../../../../public/icon class materail svg/Word.svg";
-import IconExcel from "../../../../../../../public/icon class materail svg/Excel.svg";
-import IconPowerPoint from "../../../../../../../public/icon class materail svg/PowerPoint.svg";
 
-import SelectSubjectComponent from "./SelectSubjectComponent";
 import SelectClassToAsignComponent from "./SelectClassToAsignComponent";
 import { useForm } from "react-hook-form";
 import InputComponent from "@/app/(auth)/_component/InputComponent";
 import {
-  getAllMaterialUploadBySubjectIdAction,
   getAllMaterialsBySubjectIdAction,
   insertMaterialBySubjectIdAction,
 } from "@/action/materialAction";
 import toast from "react-hot-toast";
-import { findElements } from "@fullcalendar/core/internal";
-import { insertMaterialBySubjectIdService } from "@/service/class/material/material.service";
 import { useEdgeStore } from "@/lib/edgestore";
-import { string } from "zod";
 import Link from "next/link";
 
 const FormCreateMaterialComponent = ({ subjectId, params, onClose, subId }) => {
@@ -53,14 +41,14 @@ const FormCreateMaterialComponent = ({ subjectId, params, onClose, subId }) => {
   const [uploadMaterial, setUploadMaterial] = useState();
   const [links, setLinks] = useState();
 
-  // useEffect(() => {
-  //   console.log('link upload is:', links);
-  // })
   useEffect(() => {
     console.log("url after upload : ", urls);
   }, [urls]);
 
   const onSubmit = async (data) => {
+    console.log("Link Submit :", links);
+    console.log("urls Submit :", file);
+    
     const inputMaterial = {
       materialTitle: data.materialTitle,
       description: data.description,
@@ -227,7 +215,7 @@ const FormCreateMaterialComponent = ({ subjectId, params, onClose, subId }) => {
                             id="images"
                             type="file"
                             valid={register}
-                            onChange={(e) => setFile(e.target.files[0])}
+                            onChange={(e) => setFile(e.target.files?.[0])}
                             className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
                           />
                         </div>
