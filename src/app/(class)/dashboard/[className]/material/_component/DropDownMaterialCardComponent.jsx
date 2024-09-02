@@ -147,11 +147,11 @@ const DropDownMaterialCardComponent = ({ material, subjectData, params }) => {
                           >
                             <div className="w-[80%] h-[100%] flex">
                               <div
-                                className={`w-[9px] h-[100%] bg-[#C3E0FA] mr-[7%]`}
+                                className={`w-[9px] h-[100%] bg-[#ff8fab] mr-[7%]`}
                               ></div>
                               <div className="w-[70%] h-[100%] flex items-center">
                                 <div
-                                  className={`w-[38.86px] bg-[#C3E0FA] h-[40px] rounded-[12px] flex justify-center items-center`}
+                                  className={`w-[38.86px] bg-[#ff8fab42] h-[40px] rounded-[12px] flex justify-center items-center`}
                                 >
                                   <Image
                                     src={IconLink}
@@ -167,7 +167,7 @@ const DropDownMaterialCardComponent = ({ material, subjectData, params }) => {
                                     <p className="text-[10px] text-black w-[75px] line-clamp-1">
                                       {e?.description}
                                     </p>
-                                    <p className="p[4px] w-[40px] bg-[#C3E0FA] text-primary text-[10px] text-center rounded-lg line-clamp-1 p-[1] lowercase">
+                                    <p className="p[4px] w-[40px] bg-[#ff8fab42] text-asset text-[10px] text-center rounded-lg line-clamp-1 p-[1] lowercase">
                                       {cutStringIntoChunks(
                                         e?.subjectInfo.subjectName
                                       )}

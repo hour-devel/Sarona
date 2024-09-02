@@ -206,7 +206,7 @@ const FormCreateMaterialComponent = ({ subjectId, params, onClose, subId }) => {
                             className="w-[15px] h-[18px] cursor-pointer"
                           />
                           <div className="ml-[10px] flex ">
-                            <u className="text-blue-200 mr-[6px] text-[15px]">
+                            <u className="text-primary mr-[6px] text-[15px]">
                               Click here
                             </u>
                             <p className="text-[15px]">to upload file</p>
@@ -296,12 +296,12 @@ const FormCreateMaterialComponent = ({ subjectId, params, onClose, subId }) => {
                             >
                               <div className="w-[80%] h-[100%]  flex">
                                 <div
-                                  className={`w-[9px] h-[100%] bg-[#C3E0FA] mr-[7%]`}
+                                  className={`w-[9px] h-[100%] bg-asset mr-[7%]`}
                                 // style={{ backgroundColor: getFileColor(upload?.materialLinks?.fileUrl) }}
                                 ></div>
                                 <div className="w-[70%] h-[100%]  flex items-center">
                                   <div
-                                    className={`w-[36.85px] h-[36px] rounded-[12px] bg-[#C3E0FA] flex justify-center items-center`}
+                                    className={`w-[36.85px] h-[36px] rounded-[12px] bg-[#ff8fab42] flex justify-center items-center`}
                                     style={
                                       {
                                         // backgroundColor: getFileColor(e.url),
@@ -321,7 +321,7 @@ const FormCreateMaterialComponent = ({ subjectId, params, onClose, subId }) => {
                                         {/* Size: 20MB */}
                                         {upload?.description}
                                       </p>
-                                      <p className="p[4px] w-[40px] bg-[#C3E0FA] text-primary text-[10px] text-center rounded-lg line-clamp-1">
+                                      <p className="p[4px] w-[40px] bg-[#daf4f0] text-primary text-[10px] text-center rounded-lg line-clamp-1">
                                         {upload?.subjectInfo?.subjectName}
                                       </p>
                                     </div>
