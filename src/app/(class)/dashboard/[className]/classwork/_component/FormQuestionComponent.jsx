@@ -44,6 +44,7 @@ const FormQuestionComponent = ({ studentId, classworkId, classId, model }) => {
   };
   useEffect(() => {
     handleUsersExam();
+    console.log("User Exam :",userExam);
   }, []);
 
   // dynamic answer

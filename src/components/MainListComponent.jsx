@@ -233,7 +233,7 @@ const MainListComponent = ({ pathName, classData }) => {
                 </p>
               </Link>
             </ListboxItem>
-            <ListboxItem
+            {/* <ListboxItem
               className={`${
                 pathName == "/calendar" ? "text-[#000]" : "text-inUseGray"
               } h-[40px]`}
@@ -270,7 +270,7 @@ const MainListComponent = ({ pathName, classData }) => {
                   </span>
                 </p>
               </Link>
-            </ListboxItem>
+            </ListboxItem> */}
             <ListboxItem
               className={`${
                 pathName == "/member" ? "text-[#000]" : "text-inUseGray"

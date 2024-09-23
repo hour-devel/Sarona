@@ -39,7 +39,7 @@ const PaginationComponent = ({
           />
         </div>
         <div className="w-[41.2px] h-[100%] text-[#000000a0] flex items-center justify-center text-[14px]">
-          of &nbsp;{totalPages}
+          of &nbsp;{totalPages ?? 1}
         </div>
         <button
           className="w-[41.2px] h-[100%] flex items-center justify-center hover:bg-gray-200"

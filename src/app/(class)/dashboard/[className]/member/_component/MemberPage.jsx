@@ -28,7 +28,7 @@ const MemberPageComponent = ({ allMember, classId ,classinfo}) => {
   const [roleFilter, setRoleFilter] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
   const itemsPerPage = 6;
-  const totalPages = Math?.ceil(allMember?.length / itemsPerPage);
+  const totalPages = Math?.ceil((allMember?.length ?? 1) / itemsPerPage);
   // Func filter
   const handleRoleChange = (newRole) => {
     setRoleFilter(newRole);

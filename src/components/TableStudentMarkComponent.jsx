@@ -44,8 +44,6 @@ const TableStudentWorkComponent = ({
     setOpen(true);
   };
 
-  //console.log("Student ID :", stuId);
-
   const getSubjectExam = async () => {
     const subjectExam = await getSubjectBySubjectIdAction(subjectId);
     setSubName(subjectExam?.payload?.subjectName);
