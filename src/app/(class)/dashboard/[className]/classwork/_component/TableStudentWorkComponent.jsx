@@ -47,7 +47,6 @@ const TableStudentWorkComponent = ({
     setStuId(e.currentTarget.getAttribute("data-id"));
     setAnsId(e.currentTarget.getAttribute("data-ansId"));
     setCheck(e.currentTarget.getAttribute("data-status"));
-    console.log("check :",check);
     if (check) {
       setOpenFeedBack(true);
     } else {
@@ -151,7 +150,6 @@ const TableStudentWorkComponent = ({
                 Status
               </TableColumn>
             </TableHeader>
-
             <TableBody>
               {userExam.map((e, i) => (
                 <TableRow
@@ -202,7 +200,6 @@ const TableStudentWorkComponent = ({
                     )}
                   </TableCell>
                 </TableRow>
-                // //console.log("Login data user exam :", e);
               ))}
             </TableBody>
           </Table>

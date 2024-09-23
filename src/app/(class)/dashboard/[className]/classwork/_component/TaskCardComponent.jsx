@@ -231,7 +231,13 @@ const TaskCardComponent = ({ userLoginId, data, subjectId, params }) => {
       return;
     } else {
       if (data?.isExamination) {
+          console.log("============================================");
+          console.log("givenTimeStartDate :", givenTimeStartDate);
+          console.log("givenTimeDueDate :", givenTimeDueDate);
+          console.log("currentTime :", currentTime);
+          console.log("============================================");
         if (givenTimeStartDate > currentTime) {
+          setIsExam(false)
           toast("Can not exam on this time !!!", {
             style: {
               background: "orange",
@@ -239,11 +245,6 @@ const TaskCardComponent = ({ userLoginId, data, subjectId, params }) => {
             },
           });
         } else if (givenTimeDueDate < currentTime) {
-          console.log("============================================");
-          console.log("givenTimeStartDate :", givenTimeStartDate);
-          console.log("givenTimeDueDate :", givenTimeDueDate);
-          console.log("currentTime :", currentTime);
-          console.log("============================================");
           toast("Expired Time !!!", {
             style: {
               background: "orange",

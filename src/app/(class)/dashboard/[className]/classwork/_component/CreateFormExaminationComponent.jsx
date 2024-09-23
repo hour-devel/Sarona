@@ -72,7 +72,7 @@ const CreateFormExaminationComponent = ({ data, title, model, params }) => {
   const [forms, setForms] = useState([
     {
       id: 1,
-      type: 1,
+      type: 3,
       data: {},
     },
   ]);
@@ -136,7 +136,7 @@ const CreateFormExaminationComponent = ({ data, title, model, params }) => {
   const addForm = () => {
     const newForm = {
       id: forms.length + 1,
-      type: 1,
+      type: 3,
       data: {},
     };
     setForms([...forms, newForm]);

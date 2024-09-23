@@ -66,8 +66,6 @@ const WhQuestionComponent = ({
     });
   }, []);
 
-  console.log("setStuAns :", stuAns);
-
   useEffect(() => {
     setWhQuestionValue({
       no: form?.no,

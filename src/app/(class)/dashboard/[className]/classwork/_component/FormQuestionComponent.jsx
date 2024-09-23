@@ -11,19 +11,13 @@ import {
   ScrollShadow,
   Textarea,
 } from "@nextui-org/react";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import x from "../../../../../../../public/icon/x.svg";
-import pds from "../../../../../../../public/pds.svg";
-import SelectComponent from "../../../setting/_component/SelectComponent";
-
 import Image from "next/image";
-
 import WhQuestionComponent from "./_typeQuesttion/WhQuestionComponent";
 import DropDownQuesttionComponent from "./_typeQuesttion/DropDownQuesttionComponent";
 import {
   checkAnswerAction,
-  getAllClassWorkActon,
   getAllUserExamAction,
 } from "@/action/classAction";
 import RadioQuestionComponent from "./_typeQuesttion/RadioQuestionComponent";
@@ -83,6 +77,9 @@ const FormQuestionComponent = ({ studentId, classworkId, classId, model }) => {
         const existingAnswerIndex = prevAnswers.findIndex(
           (answer) => answer?.no === data?.no
         );
+
+        console.log("existingAnswerIndex :",existingAnswerIndex);
+        
         if (existingAnswerIndex !== -1) {
           // If the answer already exists, update it
           return prevAnswers.map((answer, index) =>
@@ -109,6 +106,11 @@ const FormQuestionComponent = ({ studentId, classworkId, classId, model }) => {
 
   const onSubmit = async (data) => {
     const formattedAnswers = formatAnswers(dynamicAnswer);
+    console.log("formattedAnswers :",formattedAnswers);
+
+    console.log("dynamicAnswer :",dynamicAnswer);
+    
+    
     const checkingAnswer = dynamicAnswer.filter(
       (answer) =>
         answer?.score !== "" && answer?.no !== "" && answer !== undefined

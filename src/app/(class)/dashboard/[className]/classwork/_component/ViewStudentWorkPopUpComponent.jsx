@@ -22,105 +22,6 @@ const ViewStudentWorkPopUpComponent = ({
   userExam,
   openStudentWorkPopup,
 }) => {
-  const studentData = [
-    {
-      img: "https://i.pravatar.cc/150?u=a04258114e29026708c",
-      name: "Lihour",
-      subject: "Next JS",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-    {
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
-      name: "Sopheak",
-      subject: "Spring",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-    {
-      img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
-      name: "Lyhouy",
-      subject: "Figma",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-    {
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-      name: "Tola",
-      subject: "Document",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-    {
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-      name: "Lyheng",
-      subject: "Presentor",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-    {
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-      name: "Vichhai",
-      subject: "Frontend",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-    {
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-      name: "Daryta",
-      subject: "Frontend",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-    {
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-      name: "Bunleng",
-      subject: "Figma",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-    {
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-      name: "Daryta",
-      subject: "Frontend",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-    {
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-      name: "Bunleng",
-      subject: "Figma",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-    {
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-      name: "Daryta",
-      subject: "Frontend",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-    {
-      img: "https://i.pravatar.cc/150?u=a04258114e29026708c",
-      name: "Bunleng",
-      subject: "Figma",
-      class: "SR",
-      handIn: "Wed 7 May at 2:01",
-      socres: "99",
-    },
-  ];
-
   console.log("userExam :", userExam);
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -184,17 +85,6 @@ const ViewStudentWorkPopUpComponent = ({
                     </p>
                   </div>
                 </div>
-                {/* <div className="w-[200px] h-[100%] float-right flex items-center">
-                  <div className="w-[100%] h-[70%] float-left flex items-center justify-end rounded-lg overflow-hidden">
-                    <Button
-                      color="primary"
-                      className="w-[120px]"
-                      onClick={() => setOpenViewFeedBack(true)}
-                    >
-                      Return all
-                    </Button>
-                  </div>
-                </div> */}
               </div>
               {openViewFeedback && (
                 <ViewFeedBackTaskComponent
