@@ -33,6 +33,8 @@ const FormQuestionComponent = ({ studentId, classworkId, classId, model }) => {
   // get user has been exam already
   const [userExam, setUserExam] = useState();
   const handleUsersExam = async () => {
+    console.log("Working Check Boxx");
+    
     const allUserExam = await getAllUserExamAction(classworkId);
     {
       allUserExam?.payload.map((data) => {
@@ -175,30 +177,31 @@ const FormQuestionComponent = ({ studentId, classworkId, classId, model }) => {
                       </div>
                     </div>
                     {userExam?.classwork?.form.map((form) =>
-                      form.typeOfQuestion == "qa" ? (
-                        <WhQuestionComponent
-                          handleDynamicAnswer={handleDynamicAnswer}
-                          socre={userExam?.formAnswer?.map((Ans) => {
-                            if (form.no == Ans.no) {
-                              if (
-                                form?.defaultAnswer.toString() ===
-                                Ans?.answers.toString()
-                              ) {
-                                return form?.scores;
-                              } else {
-                                return 0;
-                              }
-                            }
-                          })}
-                          Ans={userExam?.formAnswer?.map((Ans) => {
-                            if (form.no == Ans.no) {
-                              return Ans.answers.toString();
-                            }
-                          })}
-                          form={form}
-                          formAns={userExam?.formAnswer}
-                        />
-                      ) : form.typeOfQuestion == "multiple" ? (
+                      // form.typeOfQuestion == "qa" ? (
+                      //   <WhQuestionComponent
+                      //     handleDynamicAnswer={handleDynamicAnswer}
+                      //     socre={userExam?.formAnswer?.map((Ans) => {
+                      //       if (form.no == Ans.no) {
+                      //         if (
+                      //           form?.defaultAnswer.toString() ===
+                      //           Ans?.answers.toString()
+                      //         ) {
+                      //           return form?.scores;
+                      //         } else {
+                      //           return 0;
+                      //         }
+                      //       }
+                      //     })}
+                      //     Ans={userExam?.formAnswer?.map((Ans) => {
+                      //       if (form.no == Ans.no) {
+                      //         return Ans.answers.toString();
+                      //       }
+                      //     })}
+                      //     form={form}
+                      //     formAns={userExam?.formAnswer}
+                      //   />
+                      // ) :
+                       form.typeOfQuestion == "multiple" ? (
                         <RadioQuestionComponent
                           handleDynamicAnswer={handleDynamicAnswer}
                           form={form}

@@ -158,7 +158,7 @@ const NavbarHomePageComponent = ({ role, mark }) => {
             )}
 
             {/* show on teacher side */}
-            {role && (
+            {/* {role && (
               <Button
                 className="p-[5px] bg-white hover:border-1 hover:bg-gray-200 absolute top-[15px] right-[12px] rounded-lg flex justify-center items-center"
                 onClick={() => setOpenMark(true)}
@@ -167,7 +167,7 @@ const NavbarHomePageComponent = ({ role, mark }) => {
                   Marks
                 </h1>
               </Button>
-            )}
+            )} */}
             {isOpen && (
               <StudentMarkComponent
                 mark={mark}
